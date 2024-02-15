@@ -1,0 +1,86 @@
+
+
+.scrollable{
+    height: 80vh;
+    overflow: auto;
+    padding: 10px 0px;
+}
+
+ /* Track */
+
+ .scrollable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Handle */
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color:#F26522;
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+.scrollable::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #F26522;
+}
+
+.countryTabs {
+    padding: 10px 0px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.countryTabs ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: auto; */
+}
+
+.countryTabs ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transform: skew(-20deg);
+    background-color: #F26522;
+    padding: 5px 12px;
+    border-radius: 0;
+
+}
+
+.countryTabs ul li span{
+    transform: skew(20deg);
+    display: block;
+    color:#fff;
+    font-size: 13px;
+}
+
+.countryTabs ul li.active{
+    background-color: #ccc;
+}
+
+.countryTabs ul li.active span{
+    color:#000;
+}
+
+.countryTabs ul li:hover,
+.countryTabs ul li.active {
+    color: #F26522;
+}
+
+.icons {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #3cd8f1;
+}
+
+.icons i {
+    cursor: pointer;
+}

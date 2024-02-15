@@ -1,0 +1,251 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------
+     _                _  _     _                                      _      _                                       _    _
+    | |              ( )| |   | |                                    | |    | |                                     | |  | |
+  __| |  ___   _ __  |/ | |_  | |__    ___    __ _   ___    ___    __| |    | |__    ___    __ _  _ __   ___   __ _ | |_ | |
+ / _` | / _ \ | '_ \    | __| | '_ \  / _ \  / _` | / _ \  / _ \  / _` |    | '_ \  / _ \  / _` || '__| / _ \ / _` || __|| |
+| (_| || (_) || | | |   | |_  | |_) ||  __/ | (_| || (_) || (_) || (_| | _  | |_) ||  __/ | (_| || |   |  __/| (_| || |_ |_|
+ \__,_| \___/ |_| |_|    \__| |_.__/  \___|  \__, | \___/  \___/  \__,_|( ) |_.__/  \___|  \__, ||_|    \___| \__,_| \__|(_)
+                                              __/ |                     |/                  __/ |
+                                             |___/                                         |___/
+ksp----------------------------------------------------------------------------------------------------------------------------
+*/
+
+ //========================================//
+ // Variables //
+ //========================================//
+$text-color-dark: #0A0A0A !default;
+$text-color: #343434 !default;
+$light-color: #ffffff !default;
+$main-color: #F26522 !default;
+$second-color: #373B43 !default;
+$black:#000;
+$thrid-color: #1D1E1F !default;
+$white-smoke: #F8F8F8;
+
+
+
+
+ $section-text : 42px;
+ $h2 : 36px;
+ $h3 : 25px;
+ $h4 : 20px;
+ $h5 : 18px;
+ $h6 : 16px;
+
+
+ // Documentation starts here
+ // --------------------------------------------
+ // * Global...............Globally-available variables and config.
+ * {
+     padding: 0;
+     margin: 0;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-overflow-scrolling: touch;
+ }
+
+ html {
+     height: 100%;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+
+ /* Let's get this party started */
+
+ ::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ /* Track */
+
+ ::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+ }
+
+ /* Handle */
+
+ ::-webkit-scrollbar-thumb {
+     border-radius: 8px;
+     background-color: $text-color;
+     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+     &:window-inactive {
+         background-color: $text-color;
+     }
+ }
+
+ body.body {
+    font-family:'Montserrat';
+     color: $text-color-dark;
+     min-height: 100vh;
+     overflow-x: hidden;
+     display: flex;
+     font-size: $h6;
+     line-height: 1.5;
+     background-color: #b3b3b3;
+
+
+     a {
+         transition: all 0.3s linear;
+         text-decoration: none;
+
+         &:hover,
+         &:visited,
+         &:focus {
+             outline: none !important;
+             box-shadow: none;
+             text-decoration: none;
+         }
+     }
+
+    
+     .btn:hover,
+     .btn:focus {
+         outline: 0;
+         box-shadow: none !important;
+         transition: all 0.3s linear;
+     }
+
+     .btn {
+         padding: 8px 15px;
+         border-radius: 0;
+         color: $light-color;
+         font-size: 16px;
+
+         &:hover {
+             box-shadow: none;
+             text-decoration: none;
+         }
+
+         &:focus {
+             box-shadow: none;
+             text-decoration: none;
+         }
+     }
+
+     .btn-default {
+         background: $main-color !important;
+         border: 0;
+     }
+
+     .btn-default:before {
+         background-color: $text-color-dark !important;
+     }
+
+     .btn-light {
+         background: $text-color-dark !important;
+         border: 0;
+     }
+
+     .btn-light:before {
+         background-color: $main-color !important;
+     }
+
+     .container-fluid{
+        padding:0px 5rem;
+    }
+
+ }
+p{
+    font-size: 16px;
+    line-height: 26px;
+
+}
+ .h2,
+ h2 {
+     font-size: $h2;
+     ;
+ }
+
+ h3 {
+     font-size: $h3;
+     ;
+     
+ }
+
+ h4 {
+     font-size: $h4;
+     ;
+ }
+
+ h5 {
+     font-size: $h5;
+     ;
+ }
+
+ h6 {
+     font-size: $h6;
+     ;
+ }
+
+ .pad-50 {
+     padding: 50px 0;
+ }
+
+ .padt-90 {
+     padding-top: 90px;
+ }
+
+ .mrt-90 {
+     margin-top: 90px;
+ }
+
+ .section-title {
+     font-size: 32px;
+     font-family: 'Avenir-Next-Demi-Bold';
+     margin-bottom: 15px;
+     color: $text-color;
+ }
+
+ .pd-0 {
+     padding-bottom: 0 !important;
+ }
+
+ .pt-0 {
+     padding-top: 0 !important;
+ }
+
+ .mt-0 {
+     margin-top: 0 !important;
+ }
+
+ .mb-5 {
+     margin-bottom: 50px;
+ }
+
+ .mt-1 {
+     margin-bottom: 10px !important;
+ }
+
+ .mr-10 {
+     margin: 10px 0 !important;
+ }
+
+ main {
+     flex: 1 0 auto;
+ }
+
+
+ // * Global...............Globally-available Reusable LAYOUTS.
+ .page-wrapper {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     min-height: 100vh;
+     width: 100%;
+    //  overflow: hidden;
+ }
+
+ // Let the site building begin
+ // --------------------------------------------
+
+ @import "mixin-variables";
+ @import "plugins";
+ @import "pages/fonts";
+ @import "pages/header";
+ @import "pages/home";
+ @import "pages/inner-pages";
+ @import "pages/responsive";
